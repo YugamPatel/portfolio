@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yugam's Portfolio</title>
+  </head>
+
+  <body>
+
+    <div id="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">Yugam</div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Java Developer</p>
+          <h1>
+            Hi, I'm <span>Yugam</span><br />
+            From Canada
+          </h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-me-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur adipisci maiores cumque quo provident! Porro tempore,
+              laudantium aspernatur, molestias minus fuga dicta ipsam culpa
+              pariatur at illo nobis nihil voluptatum quaerat itaque cupiditate
+              neque possimus sit veritatis sequi voluptatibus in!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web-Development</span><br />Web app Development</li>
+                <li><span>App-Development</span><br />Building Application</li>
+                <li>
+                  <span>Java Developer</span><br />Advanced Java Programming
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022-Current</span><br />Kognitive sales solution</li>
+                <li><span>2021-2022</span><br />Walmart</li>
+                <li><span>2020-2021</span><br />Pc Financial</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-Current</span><br />Student in University Of
+                  Manitoba
+                </li>
+                <li><span>2007-2022</span><br />Bhartiya Vidhya Bhavans</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
