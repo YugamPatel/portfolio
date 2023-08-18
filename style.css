@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+* {
+  /* background-color: #080808; */
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("Images/background.png");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid wheat; /* testing the code */
+}
+
+.container{
+    padding: 10px 10%;
+    border: 2px solid blue; /* testing the code */
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid wheat; /* testing the code */
+}
+
+.nav li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.nav li a{
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav li a::after{
+    content: '';
+    width: 0;
+    height: 1.8px;
+    background: #5150bd;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.nav li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    border: 2px solid wheat; /* testing the code */
+}
+
+.header-text span{
+    color: #5150bd;
+}
+
+
+
+
+#about{
+    background-color: black;
+    border: 2px solid wheat; /* testing the code */
+    padding: 80px 0 ;
+    color: #ababab;
+}
+
+.row{
+    border: 2px solid wheat; /* testing the code */
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    margin-left: 13%;
+    width: 100%;
+    border-radius: 20px;
+}
+.about-col-2{
+    padding: 0 5%;
+    flex-shrink: 10px;
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;
+}
+.about-me-p{
+    margin-top: 10px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0px 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+     
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5150bd;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 14px 0;
+}
+
+.tab-contents ul li span{
+    font-size: 16px;
+    color: #ff004f;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
