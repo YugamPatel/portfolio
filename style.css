@@ -1,3 +1,8 @@
+:root{
+  --beginner:  #F7FFF7;
+  --moderate: #8B8BAE ;
+  --expert:  #1B998B ;
+}
 * {
   margin: 0;
   padding: 0;
@@ -542,4 +547,61 @@ nav .fa-solid {
   .contact-right {
     flex-basis: 100%;
   }
+}
+
+
+#skills{
+  background-color: #13032a;
+}
+
+.myskills{
+  text-align: center;
+}
+
+.skills-list{
+  padding: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill-list-container{
+  border: 2px solid greenyellow;
+  margin: 60px;
+  box-shadow: 0px 0px 50px blue;
+}
+
+.spacer{
+  justify-content:space-evenly;
+}
+
+.skill{
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 20px; 
+  background-color: whitesmoke;
+  transition: 0.5s;
+}
+
+.skill:hover{
+  box-shadow: 9px 6px 8px #ff004f;
+  transform: scale(1.05);
+}
+
+.skill img{
+  padding: 15px 15px;
+  width: 100%;
+  display: block;
+}
+
+.beginner{
+  background-color: var(--beginner);
+}
+.moderate{
+  background-color: var(--moderate);
+}
+.expert{
+  background-color: var(--expert);
 }
