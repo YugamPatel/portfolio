@@ -486,6 +486,11 @@ nav .fa-solid {
 }
 
 @media (max-width: 706px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
   #header {
     background-image: url("Images/phone-background.png");
   }
@@ -558,42 +563,69 @@ nav .fa-solid {
   text-align: center;
 }
 
+.color-teller{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgb(0, 170, 248);
+}
+
+.show-s{
+  margin-bottom: 20px;
+  border-bottom: 5px solid rgb(248, 9, 0);
+  display: inline-block;
+  text-align: center;
+  padding-top: 7px;
+  width: 170px;
+  height: 50px;
+  font-size: 26px;
+  color: #13032a;
+  border-radius: 15px
+}
+
 .skills-list{
   padding: 20px 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-evenly;
 }
 .skill-list-container{
-  border: 2px solid greenyellow;
-  margin: 60px;
-  box-shadow: 0px 0px 50px blue;
+  border: 2px solid rgba(61, 222, 7, 0.631);
+  margin: 60px 40px 100px 40px;
+  box-shadow: 0px 0px 50px rgb(0, 221, 255);
+  border-radius: 20px;
 }
 
-.spacer{
-  justify-content:space-evenly;
+.spacer{  
+  justify-content:space-between;
 }
 
 .skill{
   margin-bottom: 10px;
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 20px; 
   background-color: whitesmoke;
   transition: 0.5s;
 }
 
 .skill:hover{
-  box-shadow: 9px 6px 8px #ff004f;
+  box-shadow: 0px 0px 16px #ff004f;
   transform: scale(1.05);
+}
+
+.skill:hover img{
+  filter: drop-shadow(0px 0px 4px black);
 }
 
 .skill img{
   padding: 15px 15px;
   width: 100%;
   display: block;
+  transition: 0.5s;
 }
 
 .beginner{
