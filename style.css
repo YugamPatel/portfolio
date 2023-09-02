@@ -158,6 +158,7 @@ html,body {
   color: #fff;
 }
 .about-me-p {
+  color:rgb(124, 157, 25);
   margin-top: 10px;
 }
 
@@ -276,13 +277,6 @@ html,body {
   translate: 4px -1px;
 }
 
-/* .work-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-  gap: 40px;
-} */
 
 .work-list {
   display: grid;
@@ -295,15 +289,15 @@ html,body {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  /* flex: 1 1 27%; */
-  /* max-width: calc(100% - 40px); */
 }
 
 .work img {
   border-radius: 10px;
   width: 100%;
+  height: 100%;
   display: block;
   transition: 0.6s;
+
 }
 
 .layer {
@@ -325,7 +319,12 @@ html,body {
   transition: 0.3s ease-in-out;
 }
 .layer p {
-  font-size: 0.75rem;
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  background-color: #ff450183;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .layer i {
@@ -345,8 +344,12 @@ html,body {
 }
 
 .layer h3 {
-  font-weight: 500;
+  padding: 10px;
+  font-weight: 900;
   margin-bottom: 20px;
+  color: floralwhite;
+  background-color: #6209e085;
+  border-radius: 10px;
 }
 
 .work:hover img {
@@ -491,6 +494,10 @@ nav .fa-solid {
     overflow-x: hidden;
   }
 
+  .layer {
+    height: 100%;
+  }
+
   #header {
     background-image: url("Images/phone-background.png");
   }
@@ -565,6 +572,7 @@ nav .fa-solid {
 
 .color-teller{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 20px;
   margin-bottom: 40px;
